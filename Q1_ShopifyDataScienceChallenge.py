@@ -23,7 +23,7 @@ plt.title('Fig. 1 - Order ID vs. Order Amount')
 plt.xlabel('OrderID')
 plt.ylabel('Order Amount ($)')
 plt.scatter(df.order_id,df.order_amount, alpha = 0.3)
-plt.savefig("Q1_Fig1.png",dpi=90)
+plt.savefig("Q1_Fig1.png",bbox_inches = "tight",dpi=90)
 
 #From examining the Fig 1 Order ID vs. Order Amount plot, it can be seen that a few 
 #orders are around $700,000 for the order amount. In addition, some orders around 
@@ -35,7 +35,7 @@ plt.title('Fig 2. - Total Items Per Order vs. Order Amount')
 plt.xlabel('Total Items per order')
 plt.ylabel('Order Amount ($)')
 plt.scatter(df.total_items,df.order_amount, alpha = 0.3)
-plt.savefig("Q1_Fig2.png",dpi=90)
+plt.savefig("Q1_Fig2.png",bbox_inches = "tight",dpi=90)
 
 #From the Fig 2 Total Items per Order vs. Order Amount plot, it can be seen that two groups
 # of data points exist; one on the low range of total items and one around roughly
@@ -50,7 +50,7 @@ plt.ylabel('Order Amount ($)')
 plt.xlim([0,20])
 plt.ylim([0,200000])
 plt.scatter(df.total_items,df.order_amount, alpha = 0.3)
-plt.savefig("Q1_Fig3.png",dpi=90)
+plt.savefig("Q1_Fig3.png",bbox_inches = "tight",dpi=90)
 
 #From looking at the Fig. 3 Total Items per Order vs. Order Amount plot concentrating on the lower ranged
 #data points, it can be seen that several data points with a low Order amount exist while
@@ -68,7 +68,7 @@ plt.ylabel('Order Amount ($)')
 plt.xlim([0,10])
 plt.ylim([0,3000])
 plt.scatter(df.total_items,df.order_amount, alpha = 0.3)
-plt.savefig("Q1_Fig4.png",dpi=90)
+plt.savefig("Q1_Fig4.png",bbox_inches = "tight",dpi=90)
 #These data points appear normal. Order amount goes up with No. of items ordered and the
 #cost seems within reasonable range.
 
